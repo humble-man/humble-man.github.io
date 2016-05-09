@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抽奖ing</title>
+	<link rel="stylesheet" href="wo.css">
+    <style>
+    h1{
+        text-align:center;
+        color:red;
+        font-size:3em;
+    }
+    h2{
+    	color:red;
+    }
+    h3{
+    	color:red;
+    	text-align:center;
+    	font-size:2em;
+    }
+    li{
+    	color:red;
+    	font-size:2em;
+    }
+    .kk{
+       width:200px;
+       height: 180px;
+       border: 1px solid #000;
+       border-radius:10px 10px 10px 10px;
+       background: rgba(255,204,204,1.8);
+       font-size:3em;
+       text-align:center;
+    }
+    .kk1{
+       width:200px;
+       height: 180px;
+       border: 1px solid #000;
+       border-radius:10px 10px 10px 10px;
+       background: rgba(255,204,204,1.8);
+       font-size:3em;
+       text-align:center;
+    }
+    .kk2{
+
+       width:200px;
+       height: 180px;
+       border: 1px solid #000;
+       border-radius:10px 10px 10px 10px;
+       background: rgba(255,204,204,1.8);
+       font-size:3em;
+       text-align:center;
+       position: absolute;
+       left:1125px;
+       top: 200px;
+    }
+    .kk3{
+
+       width:200px;
+       height: 180px;
+       border: 1px solid #000;
+       border-radius:10px 10px 10px 10px;
+       background: rgba(255,204,204,1.8);
+       font-size:3em;
+       text-align:center;
+       position: absolute;
+       left:1125px;
+       top:450px;
+    }
+    body{
+
+          background:url("yd.jpg");
+          background-repeat: no-repeat;
+          background-size:100%;
+    }
+    #js{
+         position: absolute;
+         left:500px;
+         top: 100px;
+    }
+    h4{
+    	text-align:right;
+    	color:blue;
+    	font-size:2em;
+    }
+    </style>
+</head>
+<body background="自己jpg">
+<h1><pre>浙江邮电  15级软件技术班  中奖人  及  中奖级别</pre></h1><hr>
+<h2>中奖人士：</h2>
+<div class="kk">
+<p id="demo"></p>
+<script type="text/javascript">
+function myFunction(){
+var Arr = ["00王海庆","01徐浩鹏","02李明豪","03王海庆","04尹飞燕","05全凯俊","06马驰傲","07张铸涛","08许丹妮","09陈浩","10杨登欢","11王海庆","12任军","13章宇凯","14潘佳琦","15裘家威","16李玲巧","17郑天阳","18范莎莎","19王永琪","20王海庆","21白逢喜","22夏远征","23李传访","24曾丽丽","25陈王超","26林群栋","27王瑶","28王浩","29叶圣辉","30阮盛威","31徐道聪","32高启中","33王海庆","34姚文辉","35倪浩","36鲁好德","37张天一","38李彦东","39刘晓辉","40王海庆","41徐鹏"]; 
+var n = Math.floor(Math.random() * Arr.length + 1)-1; 
+document.getElementById("demo").innerHTML=Arr[n];
+ }
+</script>
+<button onclick="myFunction()">151班幸运人士</button>
+</div>
+<div class="kk2">
+<p id="demo2"></p>
+<script type="text/javascript">
+function myFunction2(){
+var Crr = ["00王海庆","01余家宝","02郑柯柯","03单超艺","04沈智婷","05赵芳燕","06周陈","07戴王辉","08方博","09陈猛","10周冰婕","11陈章文","12胡森方","13廖定旺","14沈锋","15王海庆","16唐宁","17王海庆","18张家林","19王海庆","20卫银宇","21王翔宇","22瞿骁皓","23江俊杰","24郑爱萍","25郑大强","26王海庆","27黄荣基","28王海庆","29谢秀提","30毛杰","31王志斌","32吴昊","33赵凯峰","34张奎骁","35郑钟楠","36陈兴博","37杨虹","38刘毅梅","39王丽娜","40童伟键","41伍吉康"]; 
+var j = Math.floor(Math.random() * Crr.length + 1)-1; 
+document.getElementById("demo2").innerHTML=Crr[j];
+ }
+</script>
+<button onclick="myFunction2()">152班幸运人士</button>
+</div>
+<p><h2>奖级</h2></p>
+<div class="kk1">
+<p id="demo1"></p>
+<script type="text/javascript">
+function myFunction1(){
+var Brr = ["特等奖","未中奖","一等奖","未中奖","二等奖","未中奖","三等奖","未中奖","四等奖","未中奖","五等奖","未中奖"];
+var i = Math.floor(Math.random() * Brr.length + 1)-1;
+document.getElementById("demo1").innerHTML=Brr[i];
+}
+</script>
+<button onclick="myFunction1()">抽奖ing</button>
+</div>
+<div class="kk3">
+<p id="demo3"></p>
+<script type="text/javascript">
+function myFunction3(){
+var Brr = ["特等奖","未中奖","一等奖","未中奖","二等奖","未中奖","三等奖","未中奖","四等奖","未中奖","五等奖","未中奖"];
+var i = Math.floor(Math.random() * Brr.length + 1)-1;
+document.getElementById("demo3").innerHTML=Brr[i];
+}
+</script>
+<button onclick="myFunction3()">抽奖ing</button>
+</div>
+<div id="js">
+	<h3>各等级奖的具体说明如下：</h3>
+	<p>
+		<ul>
+			<li><mark>特等奖：免考</mark></li>
+			<li><mark>一等奖：平时分加25分</mark></li>
+			<li><mark>二等奖：平时分加20分</mark></li>
+			<li><mark>三等奖：平时分加15分</mark></li>
+			<li><mark>四等奖：平时分加10分</mark></li>
+			<li><mark>五等奖：平时分加05分</mark></li>
+			<li><mark>未获奖：平时分减01分</mark></li>
+		</ul>
+		<h4><em>纯属娱乐，请勿当真</em></h4>
+		<h4><em>最终决定，请问庆哥</em></h4>
+	</p>
+</div>
+</body>
+</html>

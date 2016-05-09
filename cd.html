@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>菜单</title>
+  <style>
+    .clearfix::after{
+      content:"";
+      display: block;
+      clear:both;
+      width: 0;
+      height: 0;
+      font-size:0;
+    }
+    .menu{
+      background:pink;
+      height:50px;
+      border-radius:5px;
+      box-shadow:1px 1px 10px #00f;
+    }
+    .menu li{
+      list-style-type:none;
+      float: left;
+      border-right:1px solid #000;
+      margin:13px 0;
+    }
+    .menu li.last{
+      border-right:0px solid #000;
+    }
+    .menu li a:link{
+      color:#000;
+      font-weight:bold;
+      text-decoration:none;
+      padding:8px 20px;
+    }
+    .menu li a:hover{
+      color:#fff;
+      background: #00f;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu clearfix">
+    <li><a href="#">个人中心</a></li>
+    <li><a href="#">我的主页</a></li>
+    <li><a href="#">好友</a></li>
+    <li><a href="#">应用</a></li>
+    <li><a href="#">装扮</a></li>
+    <li class="last"><a href="#">设置</a></li>
+  </ul>
+</body>
+</html>
