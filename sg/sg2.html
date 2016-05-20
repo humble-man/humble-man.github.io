@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜狗</title>
+    <style>
+    .clearfix::after{
+      content:"";
+      width: 0;
+      height: 0;
+      font-size:0;
+      display: block;
+      clear: both;
+    }
+    body{
+    margin: 0;
+    }
+    .top{
+         width:1000px;
+         margin:10px auto;
+         position:relative;
+    }
+    .top .logo{
+    	width:193px;
+    	height:40px;
+    	/*background: url('http://dl.pinyin.sogou.com/index/header/logo.png');*/
+      float: left;
+    }
+    .top .sousuo{
+      width:325px;
+      height:32px;
+      /*background: url('http://dl.pinyin.sogou.com/index/header/search_box.png');*/
+      float: right;
+    }
+    .top .sousuo #key {
+        width: 290px;
+        height: 26px;
+        outline: none;
+        border: 1px solid #eee;
+        text-indent: 10px;
+        float: left;
+    }
+    .top .sousuo #key:focus {
+        border: 1px solid #FC6B2D;
+    }
+    .top .sousuo #btn {
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999em;
+        border: none;
+        outline: none;
+        background: url("http://dl.pinyin.sogou.com/index/header/search_box.png");
+        background-position: -293px 0;
+        margin-left: -2px;
+    }
+    .caidan {
+        width: 100%;
+        height: 40px;
+        background-color: #FC6B2D;
+    }
+    .cd {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .cd li {
+        list-style-type: none;
+    }
+    .cd li {
+        float: left;
+        padding: 11px 20px;
+        margin: 0 20px 0 0;
+        position: relative;
+    }
+    .cd li.new::after {
+        content: "";
+        width: 26px;
+        height: 14px;
+        background: url('http://dl.pinyin.sogou.com/index/2.0/new.png');
+        position: absolute;
+        top: -16px;
+        right: 0px;
+    }
+    .cd li.act,
+    .cd li:hover {
+        background-color: #FF222D;
+    }
+    .cd li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .tupian{
+      height:400px;
+      background: url('http://dl.pinyin.sogou.com/index/2.0/banner_8.0.2.jpg') center;
+    }
+    .tupian .down{
+      width: 241px;
+      height: 60px;
+      display: inline-block;
+      background: url('http://dl.pinyin.sogou.com/index/2.0/btn_down_one_8.0.1.png') left top;
+      position: absolute;
+      right:140px;
+      top:300px;
+    }
+    </style>
+</head>
+<body>
+	<div class="top clearfix">
+		<div class="logo">
+        <a href="http://pinyin.sogou.com/">
+          <img src="http://dl.pinyin.sogou.com/index/header/logo.png" alt="">
+        </a>  
+    </div>
+		<div class="sousuo clearfix">
+            <input type="text" name="key" id="key">
+            <input type="submit" id="btn" value="搜索">
+        </div>
+    </div>
+    <div class="caidan">
+        <ul class="cd">
+            <li class="act">
+                <a href="">首页</a>
+            </li>
+            <li>
+                <a href="">皮肤</a>
+            </li>
+            <li>
+                <a href="">词库</a>
+            </li>
+            <li class="new">
+                <a href="">子媒体</a>
+            </li>
+            <li>
+                <a href="">帮助</a>
+            </li>
+            <li>
+                <a href="">升级日志</a>
+            </li>
+            <li>
+                <a href="">论坛</a>
+            </li>
+        </ul>
+    </div>
+	<div class="tupian">
+	<div class="top">
+		<a class="down" href="#"></a>
+	</div>	
+	</div>
+</body>
+</html>
