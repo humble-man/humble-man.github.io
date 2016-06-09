@@ -1,0 +1,158 @@
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+    width:0;
+    height:0;
+    font-size:0;
+}
+.center{
+    width:1100px;
+    margin:0 auto;
+    position:relative;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*hearder 样式设置*/
+.header{
+    margin-top:6px;
+    height:60px;
+}
+.header h1.logo{
+    width:100px;
+    height:45px;
+    /*visibility: hidden;/*隐藏*/
+    float:left;
+    margin-top:6px;
+}
+.header h1.logo img{
+    width:100%;
+}
+.menu{
+    float:right;
+}
+.menu li{
+    float:left;
+}
+.menu li a{
+    color: #666;
+    text-decoration: none;
+    display:inline-block;
+    margin:0 15px;
+    padding:20px 0;
+    border-bottom:3px solid #fff;
+}
+.menu li a:hover{
+    color:#00a7ea;
+    border-bottom:3px solid #00a7ea;
+}
+/*header 样式设置*/
+/*banner 样式设置*/
+.banner{
+    height:260px;
+    background:url(../images/honor_banner.jpg)center;
+}
+
+/*content样式设置*/
+.content{
+    margin-top: 40px;
+    color:#333;
+}
+.content h2{
+    color: #333;
+    font-size: 1.6em;
+    font-family: "黑体";
+    padding-bottom:30px;
+}
+.content .nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    padding-top:15px;
+}
+.list{
+    font-size: 15px;
+    color: #333;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.list li{
+    float: left;
+    width: 33%;
+    height: 50px;
+}
+
+/*
+footer 样式设置
+*/
+.footer {
+    color: #666;
+    font-size: 12px;
+    background-color: #f5f5f5;
+}
+
+.footerContent {
+    padding: 30px 0;
+}
+
+.footerContent .bottomlink {
+    font-size:14px;
+    margin: 20px -5px;
+}
+.footerContent .bottomlink a{
+    display: inline-block;
+    padding:5px;
+}
+.footerContent .contactUs {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.footerContent .contactUs li {
+    float: left;
+}
+
+.footerContent .contactUs .weixin {
+    display: inline-block;
+    text-indent: -999em;
+    width: 30px;
+    height: 25px;
+    background: url(../images/ico_footer.png);
+    position: relative;
+}
+
+.footerContent .contactUs .weixin img.code {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: -50px;
+    top: 24px;
+    display: none;
+}
+
+.footerContent .contactUs .weixin:hover img.code {
+    display: block;
+}
+
+.footerContent .contactUs .weibo {
+    display: inline-block;
+    margin-left: 20px;
+    text-indent: -999em;
+    width: 30px;
+    height: 25px;
+    background: url(../images/ico_footer.png) -124px;
+}
+
+.footerContent .copyright {
+    line-height: 1.8;
+}
+.footerContent .cop{
+    color:#999;
+}
