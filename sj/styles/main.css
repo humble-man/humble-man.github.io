@@ -25,19 +25,35 @@ body{
 .div1 li{
 	float:right;
 	list-style:none;
-    padding:0 10px;
-    margin:30px auto;
     border-left:1px solid rgba(238,238,238,1);
     border-top:3px solid rgba(40,113,213,0);
     padding:27px 15px;
     margin:0px;
 }
-.div1 .li5{
+.div1 ul .li5{
 	border-right:1px solid rgba(238,238,238,1);
 }
-.div1 .li1,
-.div1 li:hover{
+.div1 ul li:hover{
 	color:rgba(40,113,213,1);
+    border-top:3px solid rgba(40,113,213,1);
+}
+.div1 ul .li1{
+	padding:0px 0px 27px 0px;
+	margin:0px;
+	border-top:none;
+}
+.div1 ul .li1:hover{
+    border-top:none;
+}
+.div1 ul:hover p{
+    border-top:3px solid rgba(40,113,213,0);
+}
+.div1 .li1 p{
+	margin:0px;
+	padding:27px 15px 0px 15px;
+	border-top:3px solid rgba(40,113,213,1);
+}
+.div1 ul .li1:hover p{
     border-top:3px solid rgba(40,113,213,1);
 }
 
