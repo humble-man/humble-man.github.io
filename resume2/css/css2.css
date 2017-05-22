@@ -26,7 +26,7 @@
     font-weight:bold;
 }
 .resumeBody .details dt {
-    background:url('http://img03.zhaopin.cn/2012/img/my/v5/lookResumebg.jpg') no-repeat 5px 0;
+    background:url(../img/lookResumebg.jpg) no-repeat 5px 0;
 }
 .resumeBody .details dt h5 {
     height:26px;
