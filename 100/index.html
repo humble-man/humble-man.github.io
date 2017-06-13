@@ -1,0 +1,37 @@
+<!DOCTYPE HTML >
+<html>
+  <head>
+    
+    <title>是男人就下100层</title>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/index.css" />
+  </head>
+  
+  <body>
+    <div class="main" id="js_main" tabindex="-1">
+		<canvas id="canvas" width="320" height="480"></canvas>
+		
+		<div class="life"><label id="js_life"></label></div>
+		
+		<div class="level">第<span id="js_level">0</span>层</div>
+		
+		<div class="start_flush" id="js_start_flush">
+           	<a href="javascript:void(0)" id="js_start_btn" style="display:none;" class="start_btn" onclick="Main.start()"></a>
+           	<span id="js_start_loading" style="position:absolute;left:241px;top:417px;font-size:16px;font-weight:bolder;">加载中...</span>
+		</div>
+		
+		<div class="end_flush" id="js_end_flush">
+			<span class="icon"></span><p></p>
+			<a href="javascript:void(0)" class="replay_btn" onclick="Main.replay()"></a>
+		</div>
+	  <h1 id="ztl">游戏已暂停</h1>
+	</div>
+
+    
+    <script type="text/javascript" src="js/wfn.js" ></script>
+    <script type="text/javascript" src="js/person.js" ></script>
+    <script type="text/javascript" src="js/block.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+
+</body>
+</html>
