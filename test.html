@@ -8,11 +8,11 @@
 		<iframe src="http://localhost:8080/Shave" frameborder="0" id="receiver"></iframe>
     		<div id="send">调用父级页面</div>
 		<script>
-		  var receiver = document.getElementById('receiver').contentWindow;
+		  var parent=window.parent;
 var btn = document.getElementById('send');
 btn.addEventListener('click', function (e) {
     e.preventDefault()
-    receiver.postMessage("Hello", "http://localhost:8080/Shave");
+   			parent.hhh()
 }); 
 		</script>
 	</body>
