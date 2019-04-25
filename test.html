@@ -7,7 +7,12 @@
 	<body>
     		<div onclick="test()">调用父级页面</div>
 		<script>
-		  window.postMessage('Nice to see you', 'http://localhost:8080/Shave')
+		  var receiver = document.getElementById('receiver').contentWindow;
+var btn = document.getElementById('send');
+btn.addEventListener('click', function (e) {
+    e.preventDefault()
+    receiver.postMessage("Hello", "http://localhost:8080/Shave");
+}); 
 		</script>
 	</body>
 </html>
