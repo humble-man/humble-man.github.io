@@ -7,7 +7,7 @@
 	<body>
     		<div onclick="test()">调用父级页面</div>
 		<script>
-		  window.opener.postMessage('Nice to see you', 'http://localhost:8080/Shave')
+		  window.postMessage('Nice to see you', 'http://localhost:8080/Shave')
 		</script>
 	</body>
 </html>
