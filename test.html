@@ -5,7 +5,8 @@
 		<title></title>
 	</head>
 	<body>
-    		<div onclick="test()">调用父级页面</div>
+		<iframe src="http://localhost:8080/Shave" frameborder="0" id="receiver"></iframe>
+    		<div id="send">调用父级页面</div>
 		<script>
 		  var receiver = document.getElementById('receiver').contentWindow;
 var btn = document.getElementById('send');
