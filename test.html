@@ -10,7 +10,7 @@
 var btn = document.getElementById('send');
 btn.addEventListener('click', function (e) {
     e.preventDefault()
-   			window.parent.postMessage("http://localhost:8080/Home", 'http://localhost:8080/Shave')
+   			window.parent.postMessage({url:'http://localhost:8080/Shave'}, 'http://localhost:8080/Shave')
 }); 
 		</script>
 	</body>
