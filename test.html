@@ -5,6 +5,11 @@
 		<title></title>
 	</head>
 	<body>
-    <a href="http://localhost:8080/Login">跳转</a>
+    		<div onclick="test()">调用父级页面</div>
+		<script>
+		  function test(){
+			window.parent.hhh()
+		  }
+		</script>
 	</body>
 </html>
