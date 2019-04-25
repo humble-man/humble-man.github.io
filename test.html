@@ -5,14 +5,13 @@
 		<title></title>
 	</head>
 	<body>
-		<iframe src="http://localhost:8080/Shave" frameborder="0" id="receiver"></iframe>
     		<div id="send">调用父级页面</div>
 		<script>
-		  var parent=window.parent;
+		  var parent=parent.document.getElementById("test").contentWindow;
 var btn = document.getElementById('send');
 btn.addEventListener('click', function (e) {
     e.preventDefault()
-   			parent.hhh()
+   			parent.postMessage(data, 'http://localhost:8080/Shave')
 }); 
 		</script>
 	</body>
