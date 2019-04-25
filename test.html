@@ -7,9 +7,7 @@
 	<body>
     		<div onclick="test()">调用父级页面</div>
 		<script>
-		  function test(){
-			window.parent.hhh()
-		  }
+		  window.opener.postMessage('Nice to see you', 'http://localhost:8080/Shave')
 		</script>
 	</body>
 </html>
