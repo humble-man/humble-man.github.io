@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    /* background-color:#9dd9ed;
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #01b9f5),
+        color-stop(0.51, #9dd9ed)
+    ); */
+    background:url(../img/main_bg.png) no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment:fixed;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.lifeBox{
+    width:5rem;
+    height:1rem;
+    position: absolute;
+    z-index:2;
+    left:0.5rem;
+    top:1rem;
+    border:0.05rem solid #ff9900;
+    border-radius: 0.5rem;
+    background:white;
+    overflow: hidden;
+}
+
+.lifeBox label{
+	/*行内块*/
+    display: inline-block;
+    width: 0rem;
+    height:1rem;
+    background-color:#00FF00;
+    border-radius: 0.5rem;
+    float:left;
+}
+
+.levelBox{
+    position: absolute;
+    z-index:2;
+    color:white;
+    font-size:1rem;
+    right:0.5rem;
+    top:1rem;
+	font-weight:bolder;
+}
+
+.levelBox span{
+    display: inline-block;
+    color: #fb0;
+    font-weight: bolder;
+    padding: 0 0.25rem 0 0.25rem;
+}
+
+.startBtnBox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background:url(../img/game_bg.png) no-repeat;
+    z-index: 10;
+	background-size: 100vw 100vh;
+}
+
+.startBtn{
+    display: inline-block;
+    position: absolute;
+    width:5rem;
+    height:5rem;
+    border:0.05rem solid #fff;
+    border-radius: 5rem;
+    right: 3rem;
+    bottom: 3rem;
+    opacity: 0;
+}
+
+.startBtn:before{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-top: 1.25rem solid transparent;
+    border-left: 2.5rem solid #feff01;
+    border-bottom:1.25rem solid transparent;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+
+.startBtn:active:before{
+    border-left-color: #fb0;
+}
+
+.startLoading{
+    position:absolute;
+    right: 2rem;
+    bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight:bolder;
+    color:#fff;
+}
+
+.endBox{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:20%;
+    width:15rem;
+    height:7.5rem;
+    display: none;
+	background-color: white;
+	border: 0.025rem solid #589300;
+	border-radius: 0.5rem;
+}
+
+.endBox .icon{
+	display: inline-block;
+    float: left;
+    width: 4rem;
+    height: 4rem;
+    background: url(../img/baozi.png) no-repeat;
+    background-size: 4rem 8rem;
+    margin: 0.5rem 0 0 0.5rem;
+}
+
+.endBox .icon.happy{
+	background: url(../img/baozi.png) 0 -4rem no-repeat;
+    background-size: 4rem 8rem;
+}
+
+.endBox p{
+    display: inline-block;
+    float: right;
+    width: 9rem;
+    color: #31454c;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.5rem;
+}
+.endBox p label{
+	color:#ff9900;
+}
+
+.endBox .replayBtn{
+    display: inline-block;
+    position: absolute;
+    color:#fb0;
+	text-shadow:0.025rem 0.025rem 0.025rem #333333;
+    bottom:0.5rem;
+    right:0.5rem;
+	font-size:1rem;
+	font-weight:bolder;
+	text-decoration:none;
+	line-height:1rem;
+}
+
+.endBox .replayBtn:after{
+    content: "";
+    display: inline-block;
+    background: url(../img/icons_btn.png) no-repeat right 0;
+    background-size: 0.9rem 5.5rem;
+    width: 1rem;
+    height: 1.15rem;
+    float: right;
+    padding-right: 0.25rem;
+}
+
+.gameTip{
+    width: 15rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	background-color: white;
+	border-radius:0.5rem;
+    color: black;
+    font-size: 1rem;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	opacity: 0;
+}
+
+
+.leftBtn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+    opacity: 0;
+}
+.rightBtn{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: yellow;
+    opacity: 0;
+}
