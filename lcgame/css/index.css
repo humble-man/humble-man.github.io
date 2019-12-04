@@ -212,3 +212,14 @@
     background: yellow;
     opacity: 0;
 }
+
+.startTip{
+    position:absolute;
+    left:38%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    font-size: 0.75rem;
+    font-weight:bolder;
+    color:#fff;
+    z-index: 10;
+}

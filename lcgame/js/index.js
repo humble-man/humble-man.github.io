@@ -39,6 +39,7 @@ var Main = {
 	//开始
 	start : function(){
 		Common.getId("startFn").style.display = "none";
+		Common.getId("startTip").style.display = "none";
 		//初始化人物
 		Main.person = new Person(screen.availWidth / 4,0,Main.imgs[0],Main.cxt,Main.gameInfo);
 		//初始化障碍物
