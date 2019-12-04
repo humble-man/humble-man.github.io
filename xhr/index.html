@@ -1,0 +1,74 @@
+<!DOCTYPE HTML >
+<html>
+  <head>
+    
+    <title>小火花快跑</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/index.css" />
+  </head>
+  <script>
+		document.addEventListener('DOMContentLoaded', function () {
+		var html = document.querySelector('html')
+		var fontsize = window.innerWidth / 18.75;
+		fontsize = fontsize > 50 ? 50 : fontsize
+		html.style.fontSize = fontsize + 'px'
+	}) 
+  </script>
+  <body>
+    <div class="main" id="mainBox">
+
+		<!-- 动画的canvas -->
+		<canvas id="canvas" width="300" height="500"></canvas>
+		
+		<!-- 人物的生命值 -->
+		<div class="lifeBox"><label id="personLife"></label></div>
+		
+		<!-- 当前突破的关卡数量 -->
+		<div class="levelBox">第<span id="levelNum">0</span>层</div>
+		
+		<div class="startBtnBox" id="startFn">
+           	<a href="javascript:void(0)" id="startBtn" style="display: none;" class="startBtn" onclick="Main.start()"></a>
+           	<span id="startLoading" class="startLoading">加载中...</span>
+		</div>
+		
+		<div class="endBox" id="endFn">
+			<span class="icon"></span><p></p>
+			<a href="javascript:void(0)" class="replayBtn" onclick="Main.replay()">再来一次</a>
+		</div>
+	  <h1 id="gameTip" class="gameTip">游戏已暂停</h1>
+
+	<div class="leftBtn" id="leftBtn" style="display: none;"></div>
+	<div class="rightBtn" id="rightBtn" style="display: none;"></div>
+	</div>
+
+    
+    <script type="text/javascript" src="js/common.js" ></script>
+    <script type="text/javascript" src="js/person.js" ></script>
+    <script type="text/javascript" src="js/block.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+
+	<script>
+	
+		var left = document.getElementById('leftBtn');
+		var right = document.getElementById('rightBtn');
+		left.addEventListener('touchstart',function(event){
+			Main.click('left');
+			event.preventDefault();
+		})
+		left.addEventListener('touchend',function(event){
+			Main.clickOver();
+			event.preventDefault();
+		})
+		right.addEventListener('touchstart',function(event){
+			Main.click('right');
+			event.preventDefault();
+		})
+		right.addEventListener('touchend',function(event){
+			Main.clickOver();
+			event.preventDefault();
+		})
+
+	</script>
+</body>
+</html>
