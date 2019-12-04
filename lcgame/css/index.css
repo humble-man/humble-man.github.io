@@ -11,7 +11,7 @@
         color-stop(0, #01b9f5),
         color-stop(0.51, #9dd9ed)
     ); */
-    background:url(../img/main_bg.png) no-repeat;
+    background:url(../img/main_bg.jpg) no-repeat;
     background-size: 100vw 100vh;
     background-attachment:fixed;
     width: 100vw;
@@ -65,7 +65,7 @@
     top:0;
     width:100vw;
     height:100vh;
-    background:url(../img/game_bg.png) no-repeat;
+    background:url(../img/game_bg.jpg) no-repeat;
     z-index: 10;
 	background-size: 100vw 100vh;
 }
